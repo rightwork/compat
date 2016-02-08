@@ -1,6 +1,6 @@
 {
   "name": "compat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Translate $env format to %env% format if on windows for npm scripts",
   "bin": {
     "compat": "./bin/compat"
