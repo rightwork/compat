@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "read-dir-files": "0.0.x",
-    "rimraf": "1.0.x",
+    "rimraf": "1.0.x"
   },
   "repository": {
     "type": "git",
