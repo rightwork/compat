@@ -1,13 +1,11 @@
 {
   "name": "compat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Translate $env format to %env% format if on windows for npm scripts",
   "bin": {
     "compat": "./bin/compat"
   },
   "devDependencies": {
-    "bluebird": "^3.2.2",
-    "lodash": "^4.2.1",
     "read-dir-files": "0.0.x",
     "rimraf": "1.0.x",
     "shell-quote": "^1.4.3"
@@ -24,5 +22,9 @@
   "engine": {
     "node": ">=0.10"
   },
-  "scripts": {}
+  "scripts": {},
+  "dependencies": {
+    "bluebird": "^3.2.2",
+    "lodash": "^4.2.1"
+  }
 }
