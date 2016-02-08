@@ -8,7 +8,6 @@
   "devDependencies": {
     "read-dir-files": "0.0.x",
     "rimraf": "1.0.x",
-    "shell-quote": "^1.4.3"
   },
   "repository": {
     "type": "git",
@@ -25,6 +24,7 @@
   "scripts": {},
   "dependencies": {
     "bluebird": "^3.2.2",
-    "lodash": "^4.2.1"
+    "lodash": "^4.2.1",
+    "shell-quote": "^1.4.3"
   }
 }
