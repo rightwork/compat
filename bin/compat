@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 var
-  nopt = require('nopt'),
   child_process = require('child_process'),
   utils = require('../lib/utils'),
   os = require('os'),
