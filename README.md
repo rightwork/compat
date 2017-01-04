@@ -9,7 +9,9 @@ so that, on windows platforms, the following command will be run:
 It will also allow relative paths to be used in the command on windows (arguments will be left alone as they generally work with either forward or back slashes):
 
 > compat '../../node_modules/.bin/browserify index.js -s JID -o bundle.js'
+
 =>
+
 > ..\..\node_modules\.bin\browserify index.js -s JID -o bundle.js
 
 
