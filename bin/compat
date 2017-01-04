@@ -19,15 +19,18 @@ function run(cmd) {
     });
 }
 
-var command = args[0]
+
+var command = args[0].split(" ")[0]
+var commandArgString = args[0].split(" ").slice(1).join(" ");
 
 if(os.platform() == "win32")
 {
-  var re = /\$([^\s]+)/;
-  var subst = '%$1%';
-
-  command = command.replace(re, subst);
+  commandArgString = commandArgString.replace(/\$([^\s]+)/, '%$1%'); // handle environment variables
+  command = command.replace(/\//g,"\\"); // switch slashes to backslashes
 }
+var commandWithArgs = command;
 
-console.log(command)
-run(command)
+if(commandArgString.length>0) commandWithArgs += " " + commandArgString
+
+console.log(commandWithArgs)
+run(commandWithArgs)
